@@ -1,9 +1,5 @@
 import React, { useEffect, useRef } from "react";
-
-interface WeatherInfoProps {
-  weatherData: any; // Replace with the appropriate type for your weather data
-}
-
+import WeatherInfoProps from "../Type";
 const WeatherInfo: React.FC<WeatherInfoProps> = ({ weatherData }) => {
   const weatherContain: any = useRef();
   useEffect(() => {
